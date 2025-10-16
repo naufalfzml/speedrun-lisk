@@ -3,8 +3,8 @@ import { defineChain } from "viem";
 export const liskSepolia = /*#__PURE__*/ defineChain({
   id: 4202,
   network: "lisk-sepolia",
-  name: "Lisk Sepolia Testnet",
-  nativeCurrency: { name: "Ether", symbol: "ETH", decimals: 18 },
+  name: "Lisk Sepolia",
+  nativeCurrency: { name: "Sepolia Ether", symbol: "ETH", decimals: 18 },
   rpcUrls: {
     default: {
       http: ["https://rpc.sepolia-api.lisk.com"],
