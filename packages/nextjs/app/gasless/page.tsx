@@ -2,7 +2,7 @@
 
 import type { NextPage } from "next";
 import { ConnectButton, useActiveAccount } from "thirdweb/react";
-import { liskSepolia } from "~~/chains";
+import { liskSepoliaThirdweb } from "~~/chains";
 import { SmartWalletDemo } from "~~/components/example-ui/SmartWalletDemo";
 import { thirdwebClient } from "~~/services/web3/thirdwebConfig";
 
@@ -19,9 +19,9 @@ const Gasless: NextPage = () => {
         <div className="flex justify-center mb-8">
           <ConnectButton
             client={thirdwebClient}
-            chain={liskSepolia}
+            chain={liskSepoliaThirdweb}
             accountAbstraction={{
-              chain: liskSepolia,
+              chain: liskSepoliaThirdweb,
               sponsorGas: true,
             }}
           />
