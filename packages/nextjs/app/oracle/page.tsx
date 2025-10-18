@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
 import { PriceDisplay } from "~~/components/example-ui/PriceDisplay";
