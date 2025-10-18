@@ -1211,13 +1211,18 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {
-        aggregateValues: "@redstone-finance/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
+        aggregateValues:
+          "@redstone-finance/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
         extractTimestampsAndAssertAllAreEqual:
           "@redstone-finance/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
-        getAuthorisedSignerIndex: "@redstone-finance/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
-        getDataServiceId: "@redstone-finance/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
-        getUniqueSignersThreshold: "@redstone-finance/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
-        validateTimestamp: "@redstone-finance/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
+        getAuthorisedSignerIndex:
+          "@redstone-finance/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
+        getDataServiceId:
+          "@redstone-finance/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
+        getUniqueSignersThreshold:
+          "@redstone-finance/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
+        validateTimestamp:
+          "@redstone-finance/evm-connector/contracts/data-services/MainDemoConsumerBase.sol",
       },
     },
     VNDToken: {
