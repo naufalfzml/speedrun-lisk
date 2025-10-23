@@ -32,9 +32,10 @@ jobs:
 
       - name: Run hardhat node, deploy contracts (& generate contracts typescript output)
         run: |
+          rm -rf packages/hardhat/deployments/hardhat packages/hardhat/deployments/localhost
           yarn chain &
           sleep 15
-          yarn deploy
+          yarn deploy --reset
 
       - name: Run nextjs lint
         run: yarn next:lint --max-warnings=0
