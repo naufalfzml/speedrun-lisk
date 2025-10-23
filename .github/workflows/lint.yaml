@@ -33,7 +33,7 @@ jobs:
       - name: Run hardhat node, deploy contracts (& generate contracts typescript output)
         run: |
           yarn chain &
-          sleep 10
+          sleep 15
           yarn deploy
 
       - name: Run nextjs lint
