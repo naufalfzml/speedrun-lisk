@@ -21,20 +21,13 @@ const deployContracts: DeployFunction = async function (hre: HardhatRuntimeEnvir
   const { deployer } = await hre.getNamedAccounts();
   const { deploy } = hre.deployments;
 
-  // Deploy MyToken first and wait for it to complete
-  const myTokenDeployment = await deploy("MyToken", {
+  await deploy("MyToken", {
     from: deployer,
     args: [],
     log: true,
     autoMine: true,
   });
 
-  // Small delay to ensure nonce is updated
-  if (myTokenDeployment.newlyDeployed) {
-    await new Promise(resolve => setTimeout(resolve, 1000));
-  }
-
-  // Deploy MyNFT after MyToken is confirmed
   await deploy("MyNFT", {
     from: deployer,
     args: [],
